@@ -25,15 +25,10 @@ struct CoinManager {
     var delegate: CoinManagerDelegate? = nil
     
     func getCoinPrice(for currency: String) {
-        print("Getting coin price for currency: \(currency)")
-        
         if let value = valueCache.getValue(for: currency) {
-            print("Found cached rate for \(currency): \(value)")
             delegate?.didUpdatePrice(price: String(format: "%.2f", value), curreny: currency)
             return
         }
-        
-        print("Remotely fetching exchange rate for \(currency)")
         
         if let url = URL(string: urlString(for: currency)) {
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
