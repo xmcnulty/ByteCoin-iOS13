@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252309D32BA0FF5B003FEE3C /* CurrencyCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252309D22BA0FF5B003FEE3C /* CurrencyCache.swift */; };
+		252309D52BA13658003FEE3C /* CoinAPIserverError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252309D42BA13658003FEE3C /* CoinAPIserverError.swift */; };
+		252309D72BA1379B003FEE3C /* APIDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252309D62BA1379B003FEE3C /* APIDataError.swift */; };
+		252309D92BA1380B003FEE3C /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252309D82BA1380B003FEE3C /* CoinData.swift */; };
+		252309DB2BA1D5FD003FEE3C /* CoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252309DA2BA1D5FD003FEE3C /* CoinAPI.swift */; };
+		252309DD2BA1D6C8003FEE3C /* .git in Resources */ = {isa = PBXBuildFile; fileRef = 252309DC2BA1D6C8003FEE3C /* .git */; };
 		ADA8AC092329367100626376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC082329367100626376 /* AppDelegate.swift */; };
 		ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC0A2329367100626376 /* SceneDelegate.swift */; };
 		ADA8AC0D2329367100626376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC0C2329367100626376 /* ViewController.swift */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		252309D22BA0FF5B003FEE3C /* CurrencyCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCache.swift; sourceTree = "<group>"; };
+		252309D42BA13658003FEE3C /* CoinAPIserverError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIserverError.swift; sourceTree = "<group>"; };
+		252309D62BA1379B003FEE3C /* APIDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataError.swift; sourceTree = "<group>"; };
+		252309D82BA1380B003FEE3C /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		252309DA2BA1D5FD003FEE3C /* CoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPI.swift; sourceTree = "<group>"; };
+		252309DC2BA1D6C8003FEE3C /* .git */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .git; sourceTree = "<group>"; };
 		ADA8AC052329367100626376 /* ByteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA8AC082329367100626376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA8AC0A2329367100626376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +54,7 @@
 		ADA8ABFC2329367100626376 = {
 			isa = PBXGroup;
 			children = (
+				252309DC2BA1D6C8003FEE3C /* .git */,
 				ADA8AC072329367100626376 /* ByteCoin */,
 				ADA8AC062329367100626376 /* Products */,
 			);
@@ -90,6 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				ADA8AC1F2329398300626376 /* CoinManager.swift */,
+				252309D22BA0FF5B003FEE3C /* CurrencyCache.swift */,
+				252309D42BA13658003FEE3C /* CoinAPIserverError.swift */,
+				252309D62BA1379B003FEE3C /* APIDataError.swift */,
+				252309D82BA1380B003FEE3C /* CoinData.swift */,
+				252309DA2BA1D5FD003FEE3C /* CoinAPI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,8 +138,9 @@
 		ADA8ABFD2329367100626376 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "The App Brewery";
 				TargetAttributes = {
 					ADA8AC042329367100626376 = {
@@ -154,6 +173,7 @@
 			files = (
 				ADA8AC152329367300626376 /* LaunchScreen.storyboard in Resources */,
 				ADA8AC122329367300626376 /* Assets.xcassets in Resources */,
+				252309DD2BA1D6C8003FEE3C /* .git in Resources */,
 				ADA8AC102329367100626376 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA8AC202329398300626376 /* CoinManager.swift in Sources */,
+				252309DB2BA1D5FD003FEE3C /* CoinAPI.swift in Sources */,
+				252309D52BA13658003FEE3C /* CoinAPIserverError.swift in Sources */,
+				252309D72BA1379B003FEE3C /* APIDataError.swift in Sources */,
 				ADA8AC0D2329367100626376 /* ViewController.swift in Sources */,
+				252309D92BA1380B003FEE3C /* CoinData.swift in Sources */,
+				252309D32BA0FF5B003FEE3C /* CurrencyCache.swift in Sources */,
 				ADA8AC092329367100626376 /* AppDelegate.swift in Sources */,
 				ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */,
 			);
@@ -220,6 +245,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -230,6 +256,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -280,6 +307,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -290,6 +318,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -313,13 +342,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = YNQG67476L;
 				INFOPLIST_FILE = ByteCoin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.appbrewery.ByteCoin;
+				PRODUCT_BUNDLE_IDENTIFIER = co.mcnulty.xavier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,13 +360,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ECFYJZ64T;
+				DEVELOPMENT_TEAM = YNQG67476L;
 				INFOPLIST_FILE = ByteCoin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.appbrewery.ByteCoin;
+				PRODUCT_BUNDLE_IDENTIFIER = co.mcnulty.xavier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
